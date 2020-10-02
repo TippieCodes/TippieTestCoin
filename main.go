@@ -152,7 +152,7 @@ func handleConn(conn net.Conn) {
 		}
 	}()
 
-	for _ = range bcServer {
+	for range bcServer {
 		spew.Dump(Blockchain)
 	}
 }
